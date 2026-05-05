@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacobian Learning Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <h2>JacoLearn</h2>
+        <ul>
+            <li onclick="showPage('theory')">Theory</li>
+            <li onclick="showPage('examples')">Solved Examples</li>
+            <li onclick="showPage('easy')">Easy Practice</li>
+            <li onclick="showPage('intermediate')">Intermediate</li>
+            <li onclick="showPage('hard')">High Level</li>
+            <li onclick="showPage('custom')">Practice Your Own</li>
+            <li onclick="showPage('progress')">Progress</li>
+            <li onclick="showPage('flashcards')">Flashcards</li>
+        </ul>
+    </aside>
+
+    <main class="content">
+        <h1>Jacobian Learning Dashboard</h1>
+
+        <div class="cards">
+            <div class="card" onclick="showPage('theory')">Theory</div>
+            <div class="card" onclick="showPage('examples')">Solved Examples</div>
+            <div class="card" onclick="showPage('easy')">Easy Practice</div>
+            <div class="card" onclick="showPage('intermediate')">Intermediate</div>
+            <div class="card" onclick="showPage('hard')">High Level</div>
+            <div class="card" onclick="showPage('custom')">Your Example</div>
+            <div class="card" onclick="showPage('progress')">Progress</div>
+            <div class="card" onclick="showPage('flashcards')">Flashcards</div>
+        </div>
+
+        <div id="pageContent"></div>
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
